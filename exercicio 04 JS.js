@@ -29,10 +29,25 @@ let pessoa = {
         nome, idade
 }
 
+function adicionarDado() {
+    let nome = document.querySelector("#nome");
+    let idade = document.querySelector("#idade");
+    console.log(nome);
+    console.log(idade);
+    pessoa.nome = nome.value;
+    pessoa.idade = idade.value;
+    console.log(pessoa);
+    Pessoas.push(pessoa);
+    let persona = document.createElement("li");
+    console.log(persona);
+    persona.innerHTML = `${pessoa.nome} tiene ${pessoa.idade}`;
+    let lista = document.querySelector("#lista");
+    lista.appendChild(persona);
+    console.log(lista);
+    let MaisVelhos = obterMaisVelhos(Pessoas)
+}
 
-
-
-let MaisVelhos = obterMaisVelhos(Pessoas) //pessoa o pessoas mais velha
+ //pessoa o pessoas mais velha
 
 function obterMaisVelhos(Pessoas) {
     let MaisVelhos = [ Pessoas[0] ]
@@ -47,29 +62,16 @@ function obterMaisVelhos(Pessoas) {
     return MaisVelhos
 }
 
-function logValidation() {
-    console.log('el boton esta funcionando');
-}
 
 function limparDados() {
-    resultado.innerHTML = '<br> Registro2: </br>' ;
+    resultado.innerHTML = '<h3> Registro2: </h3>' ;
 
 }
 //console.log ('Las personas registrada foram:')
 //console.log (' ')
-function adicionarDado() {
-    let nome = document.querySelector('#nome');
-    let idade = document.querySelector('#idade');
-    console.log(nome.value);
-    console.log(idade.value); //verificar por que da log, pero no guarda la variable nome e idade
-    let pessoa = {
-        nome: nome.value,
-        idade: idade.value
-    }
-    Pessoas.push(pessoa)
-}
 
-if (MaisVelhos.length > 1) {
+
+/* if (MaisVelhos.length > 1) {
     for (registro of MaisVelhos) {
         let pessoasMaisVelhas = document.createElement('p') //mostrar lista das pessoas mais velhas
         pessoasMaisVelhas.textContent = `São os maiores com ${registro.idade}`
@@ -82,9 +84,10 @@ if (MaisVelhos.length > 1) {
 
     /* console.log (`São os maiores com ${registro.idade}`)
     console.log (' ') */
-}
+//}
 
-else {
+
+/* else {
     for (registro of MaisVelhos) {
         let pessoasMaisVelhas = document.createElement('p') //mostrar nome e idade da pessoa mais velha
         pessoasMaisVelhas.textContent = `${registro.nome} foi o mais velho com ${registro.idade}`
@@ -92,4 +95,4 @@ else {
         //console.log (`${registro.nome} foi o mais velho com ${registro.idade}` )
     }
     
-}
+} */
