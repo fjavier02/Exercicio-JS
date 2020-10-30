@@ -4,10 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Exercicio de JavaScript</h1>
-    <p>um paragrafo</p>
-    <script src="exercicio 04 JS.js"></script>
+    <br>
+
+    <label>
+        Nome
+        <input id= 'text' placeholder="Nome" type="text">
+    </label>
+    <label>
+        Idade
+        <input id= 'idade' value="idade" placeholder="Idade" type="number" onchange="validate">
+    </label>
+    <button type="button" id="add" onclick="adicionarDado()"> Adiciona</button>
+    <button type="button" id="clean" onclick="()">Limpiar</button>
+    <sectio id='resultado'>
+        <h3>Registro:</h3>
+        <ul id="lista">
+
+        </ul>
+    </section>
+    <script src="scrip.js"></script>
 </body>
 </html>
