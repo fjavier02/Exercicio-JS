@@ -14,7 +14,7 @@ function adicionarDado() {
     console.log(idade);
     let pessoa = {
         nome: nome.value,
-        idade:idade.value
+        idade:Number(idade.value)
     }
     console.log(pessoa);
     Pessoas.push(pessoa);
