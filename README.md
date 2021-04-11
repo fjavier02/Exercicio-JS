@@ -2,8 +2,8 @@
 
 ## Aqui vai conseguir tudos o Exercicio de JavaScrip das diferentes aulas.
 
-### Exercicio 01 JS.js = Aula 03
-### Exercicio 02 JS.js = Aula 05
-### Exercicio 03 JS.js = Aula 08
-### Exercicio 04 JS.js = Aula 10
+### Exercicio 01 JS.js = Aula 03 (console)
+### Exercicio 02 JS.js = Aula 05 (console)
+### Exercicio 03 JS.js = Aula 08 (console)
+### Exercicio 04 JS.js = Aula 10 (html)
 ### Projecto JS.js= Pojecto JavaScrip
